@@ -9,7 +9,7 @@ const Search = () => {
   return (
     <Wrapper>
       <ButtonContainer>
-        <Link href="/">
+        <Link href="/" passHref={true}>
           <BackButton src="https://img.icons8.com/ios-filled/50/000000/left.png" />
         </Link>
       </ButtonContainer>
@@ -42,6 +42,7 @@ const Search = () => {
           pathname: "/confirm",
           query: { pickup: pickup, dropoff: dropoff },
         }}
+        passHref={true}
       >
         <ConfirmContainer>Confirm Locations</ConfirmContainer>
       </Link>
